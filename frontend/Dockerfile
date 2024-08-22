@@ -1,0 +1,31 @@
+# Use an official Node.js runtime as a parent image
+FROM node:18-alpine
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy package.json and package-lock.json
+COPY package*.json ./
+
+RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/main" > /etc/apk/repositories \
+    && echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories \
+    && echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories \
+    && echo "http://dl-cdn.alpinelinux.org/alpine/v3.17/main" >> /etc/apk/repositories \
+    && apk upgrade -U -a \
+    && apk add -Uuv --no-cache \
+    chromium \
+    && rm -rf /var/cache/apk/*
+
+# Install dependencies using npm ci
+# RUN npm ci
+RUN apk add yarn --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community/ && \
+    yarn install
+
+# Copy the rest of the application code
+COPY . .
+
+# Expose the port that Vite uses
+EXPOSE 5173
+
+# Command to run the Vite development server
+CMD ["npm", "run", "dev", "--", "--host"]
