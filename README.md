@@ -10,36 +10,21 @@
 1. clone the repository by running:
 
 ```
-git clone git@github.com:wach-ric/Yield-Guru.git
+git clone git@github.com:yguruco/yieldguru.git
 ```
 
 2. cd into the project directory
 
 ```
-cd Yield-Guru
+cd yieldguru
 ```
 
-3. Run ```cp ./main/.env.example ./main/.env```
+3. Run ```make image-build``` to build needed images, this might take a while.
+4. Run ```make up```to start services
 
-4. Run ```make init``` to install all frontend and backend dependencies and start the docker services.
-
-5. Run ```make watch``` to start the vite dev server and watch for changes
-
-6. Navigate to ```http://localhost:8080``` in your browser.
+7. Navigate to ```http://localhost:8080``` in your browser.
 
 ## Makefile commands
-
-### watch
-
-Starts vite dev server and watches for changes
-
-```make watch```
-
-### Backend setup
-
-Installs laravel composer dependecies and generates application key.
-
-```make backend-install```
 
 ### Frontend install
 
