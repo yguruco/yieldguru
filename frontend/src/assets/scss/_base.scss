@@ -1,0 +1,198 @@
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+    @font-face {
+        font-weight: 100;
+        font-family: 'Balmy';
+        src: local('Balmy'),
+        url('../fonts/Balmy.ttf');
+    }
+    @font-face {
+        font-weight: 300;
+        font-family: 'Balmy';
+        src: local('Balmy'),
+        url('../fonts/Balmy.ttf');
+    }
+    @font-face {
+        font-weight: 400;
+        font-family: 'Balmy';
+        src: local('Balmy'),
+        url('../fonts/Balmy.ttf');
+    }
+    @font-face {
+        font-weight: 500;
+        font-family: 'Balmy';
+        src: local('Balmy'),
+        url('../fonts/Balmy.ttf');
+    }
+    @font-face {
+        font-weight: 600;
+        font-family: 'Balmy';
+        src: local('Balmy'),
+        url('../fonts/Balmy.ttf');
+    }
+    @font-face {
+        font-weight: 700;
+        font-family: 'Balmy';
+        src: local('Balmy'),
+        url('../fonts/Balmy.ttf');
+    }
+    @font-face {
+        font-weight: 800;
+        font-family: 'Balmy';
+        src: local('Balmy'),
+        url('../fonts/Balmy.ttf');
+    }
+
+    @font-face {
+        font-weight: 300;
+        font-family: 'Roboto';
+        font-style: italic;
+        src: local('Roboto'),
+        url('../fonts/Roboto-ThinItalic.ttf');
+    }
+    @font-face {
+        font-weight: 300;
+        font-family: 'Roboto';
+        src: local('Roboto'),
+        url('../fonts/Roboto-Thin.ttf');
+    }
+    @font-face {
+        font-weight: 400;
+        font-family: 'Roboto';
+        src: local('Roboto'),
+        url('../fonts/Roboto-Light.ttf');
+    }
+    @font-face {
+        font-weight: 400;
+        font-style: italic;
+        font-family: 'Roboto';
+        src: local('Roboto'),
+        url('../fonts/Roboto-LightItalic.ttf');
+    }
+    @font-face {
+        font-family: 'Roboto';
+        src: local('Roboto'),
+        url('../fonts/Roboto-Regular.ttf');
+    }
+
+    @font-face {
+        font-weight: 600;
+        font-family: 'Roboto';
+        src: local('Roboto'),
+        url('../fonts/Roboto-Bold.ttf');
+    }
+
+    @font-face {
+        font-weight: 600;
+        font-style: italic;
+        font-family: 'Roboto';
+        src: local('Roboto'),
+        url('../fonts/Roboto-BoldItalic.ttf');
+    }
+
+    @font-face {
+        font-weight: 700;
+        font-family: 'Roboto';
+        src: local('Roboto'),
+        url('../fonts/Roboto-Black.ttf');
+    }
+
+    @font-face {
+        font-weight: 800;
+        font-family: 'Roboto';
+        src: local('Roboto'),
+        url('../fonts/Roboto-Black.ttf');
+    }
+
+    @font-face {
+        font-weight: 100;
+        font-family: 'Inter';
+        src: local('Inter'),
+        url('../fonts/Inter-Thin.ttf');
+    }
+    @font-face {
+        font-weight: 200;
+        font-family: 'Inter';
+        src: local('Inter'),
+        url('../fonts/Inter-ExtraLight.ttf');
+    }
+    @font-face {
+        font-weight: 300;
+        font-family: 'Inter';
+        src: local('Inter'),
+        url('../fonts/Inter-Light.ttf');
+    }
+    @font-face {
+        font-weight: 400;
+        font-family: 'Inter';
+        src: local('Inter'),
+        url('../fonts/Inter-Regular.ttf');
+    }
+    @font-face {
+        font-weight: 500;
+        font-family: 'Inter';
+        src: local('Inter'),
+        url('../fonts/Inter-Medium.ttf');
+    }
+    @font-face {
+        font-weight: 600;
+        font-family: 'Inter';
+        src: local('Inter'),
+        url('../fonts/Inter-SemiBold.ttf');
+    }
+    @font-face {
+        font-weight: 700;
+        font-family: 'Inter';
+        src: local('Inter'),
+        url('../fonts/Inter-Bold.ttf');
+    }
+    @font-face {
+        font-weight: 800;
+        font-family: 'Inter';
+        src: local('Inter'),
+        url('../fonts/Inter-ExtraBold.ttf');
+    }
+    @font-face {
+        font-weight: 800;
+        font-family: 'Inter';
+        src: local('Inter'),
+        url('../fonts/Inter-Black.ttf');
+    }
+
+    :root {
+        --background: #005;
+        --primary: #578AE4;
+        --secondary: #6B57E4;
+        --third: #E4578A;
+    }
+
+    * {
+        @apply transition duration-150 ease-in-out;
+    }
+
+    hr {
+        @apply my-5 border-b border-gray-100;
+    }
+
+    p:not(:first-of-type) {
+        @apply mt-4;
+    }
+
+    h1, h2, h3 {
+        @apply pb-1 font-semibold;
+    }
+
+    h1 {
+        @apply text-3xl;
+    }
+
+    h2 {
+        @apply text-2xl;
+    }
+
+    h4 {
+        @apply text-xl;
+    }
+}
