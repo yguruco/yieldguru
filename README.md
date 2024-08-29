@@ -30,7 +30,7 @@ cd yieldguru
 
 Delete and reinstall node_modules
 
-```make fontend-install```
+```make frontend-install```
 
 ### Frontend clean
 
