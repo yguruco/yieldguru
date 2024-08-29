@@ -3,7 +3,7 @@
 #### Pre-requisites
 
 - Make sure you have docker installed and running
-- Make sure you have make installes
+- Make sure you have make installed
 
 #### Get up and running
 
