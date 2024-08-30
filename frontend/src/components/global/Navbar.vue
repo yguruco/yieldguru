@@ -16,10 +16,10 @@
                 {{ route.label }}
             </router-link>
           </div>
-          <a href="#" class="bg-primary-500 text-white px-1 py-1 rounded-md text-lg font-medium hover:bg-blue-500">
+          <a href="#" class="bg-primary-500 text-white px-1 py-1 rounded-md text-lg font-medium hover:bg-labs-orange">
               Log In
           </a>
-          <a href="#" class="bg-primary-500 text-white px-1 py-1 rounded-md text-lg font-medium hover:bg-blue-500">
+          <a href="#" class="bg-primary-500 text-white px-1 py-1 rounded-md text-lg font-medium hover:bg-labs-orange">
               Sign Up
           </a>
         </div>
