@@ -1,6 +1,6 @@
 <template>
     <section>
-      this is sign in page
+      this is registerPage page
     </section>
 </template>
 

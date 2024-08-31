@@ -1,5 +1,5 @@
 <template>
-    <section class="py-16 bg-primary-500">
+    <section class="py-12 bg-white-500">
         <div class="container mx-auto w-3/4">
             <!-- Section Heading -->
             <h2 class="text-3xl font-bold text-center text-white mb-8">Our Services</h2>

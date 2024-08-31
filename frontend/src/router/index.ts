@@ -6,7 +6,8 @@ import AboutUsView from "@/views/AboutUsView.vue";
 import LearnView from "@/views/LearnView.vue";
 import BlogView from "@/views/BlogView.vue";
 import ListEMoblityView from "@/views/ListEMoblityView.vue";
-import SignInView from "@/views/SignInView.vue";
+import LogInView from "@/views/LogInView.vue";
+import RegisterView from "@/views/RegisterView.vue"
 
 const routes = [
   {
@@ -51,10 +52,16 @@ const routes = [
     component: ListEMoblityView,
   },
   {
-    path: "/sign-in",
-    name: "SignInPage",
+    path: "/login",
+    name: "LogInPage",
     props: true,
-    component: SignInView,
+    component: LogInView,
+  },
+  {
+    path: "/register",
+    name: "RegisterPage",
+    props: true,
+    component: RegisterView,
   }
 ];
 

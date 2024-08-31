@@ -1,8 +1,8 @@
 <template>
-    <section class="py-16 bg-primary-500">
+    <section class="py-12 bg-white-500 min-h-[70vh]">
         <div class="container mx-auto w-3/4">
             <!-- Section Heading -->
-            <h2 class="text-3xl font-bold text-center text-white mb-8">Our Services</h2>
+            <h2 class="text-3xl font-bold text-center text-primary-500 mb-8">Our Services</h2>
 
             <!-- Cards Container -->
             <div class="text-primary-500 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
