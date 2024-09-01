@@ -17,7 +17,7 @@ up:
 
 .PHONY: watch
 watch:
-	docker-compose up -d
+	make up
 	docker logs --tail 30 -ft yieldguru-frontend
 
 .PHONY: down

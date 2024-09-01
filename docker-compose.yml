@@ -12,6 +12,18 @@ services:
       - './frontend:/app'
     networks:
       - yieldguru
+  web-admin:
+    image: yieldguru-admin-frontend
+    container_name: yieldguru-admin-frontend
+    build:
+      context: ./admin-frontend
+      dockerfile: Dockerfile.dev
+    ports:
+      - "8081:5173"
+    volumes:
+      - './admin-frontend:/app'
+    networks:
+      - yieldguru
 
 networks:
   yieldguru:
