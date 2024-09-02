@@ -2,7 +2,7 @@
     <section class="py-16 bg-primary-500">
         <div class="container mx-auto w-3/4">
             <!-- Section Heading -->
-            <h2 class="text-3xl font-bold text-center text-white mb-8">Our Services</h2>
+            <h2 class="text-3xl font-bold text-center text-white mb-8">Revolutionizing Public Transport through Blockchain</h2>
 
             <!-- Cards Container -->
             <div class="text-primary-500 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -33,9 +33,9 @@
                     </div>
                     <div class="p-5">
                         <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Tokenizing Electric Buses</h5>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Backing a Stable Coin </h5>
                         </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Yield Guru Investments transforms electric buses into an investable asset class, enabling fractional ownership and a monthly yield for investors</p>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">The company’s innovative approach backs a Kenya Shilling stable coin with the real-world assets of electric buses, providing a secure and reliable digital currency.</p>
                         
                     </div>
                 </div>
@@ -49,9 +49,9 @@
                     </div>
                     <div class="p-5">
                         <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Tokenizing Electric Buses</h5>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Integrating Blockchain</h5>
                         </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Yield Guru Investments transforms electric buses into an investable asset class, enabling fractional ownership and a monthly yield for investors</p>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">By leveraging blockchain technology, Yield Guru Investments offers transparent tracking of investment returns and operational metrics, ensuring efficiency and trust.</p>
                         
                     </div>
                 </div>
