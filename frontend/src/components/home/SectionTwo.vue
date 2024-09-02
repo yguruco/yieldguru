@@ -2,7 +2,7 @@
     <section class="py-12 bg-primary-500">
         <div class="container mx-auto w-3/4">
             <!-- Section Heading -->
-            <h2 class="text-3xl font-bold text-center text-white mb-8">Our Services</h2>
+            <h2 class="text-3xl font-bold text-center text-white mb-8">Empowering Investors through Innovative Opportunities</h2>
 
             <!-- Cards Container -->
             <div class="text-primary-500 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -15,9 +15,11 @@
                     </div>
                     <div class="p-5">
                         <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Tokenizing Electric Buses</h5>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Cryptocurrency Management</h5>
                         </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Yield Guru Investments transforms electric buses into an investable asset class, enabling fractional ownership and a monthly yield for investors</p>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Yield Guru Investments offers a unique opportunity to invest in the cryptocurrency market through the backing of a stable coin pegged to the Kenyan Shilling.
+
+This approach provides a secure and reliable digital currency option, diverging from the volatility typically associated with cryptocurrencies.</p>
                         
                     </div>
                 </div>
@@ -31,9 +33,11 @@
                     </div>
                     <div class="p-5">
                         <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Tokenizing Electric Buses</h5>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Investment Opportunities</h5>
                         </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Yield Guru Investments transforms electric buses into an investable asset class, enabling fractional ownership and a monthly yield for investors</p>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">By tokenizing electric buses, the company creates a novel asset class that offers investors a monthly yield, democratizing access to sustainable public transport investments.
+
+This innovative approach provides a stable and attractive investment option, catering to both seasoned and new investors.</p>
                         
                     </div>
                 </div>
@@ -46,9 +50,11 @@
                     </div>
                     <div class="p-5">
                         <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Tokenizing Electric Buses</h5>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Public Transportation Services</h5>
                         </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Yield Guru Investments transforms electric buses into an investable asset class, enabling fractional ownership and a monthly yield for investors</p>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Yield Guru Investments’ unique business model integrates public transportation services, leveraging blockchain technology to enhance efficiency and transparency.
+
+This integration contributes to the advancement of sustainable urban mobility, benefiting both investors and the local community.</p>
                         
                     </div>
                 </div>
