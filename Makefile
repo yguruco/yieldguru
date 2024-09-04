@@ -36,7 +36,7 @@ frontend-install:
 .PHONY: frontend-clean
 frontend-clean:
 	rm -rf ./frontend/node_modules 2>/dev/null || true
-	rm ./frontend/package-lock.json 2>/dev/null || true
+	rm -rf ./frontend/yarn.lock 2>/dev/null || true
 	docker exec --workdir /app yieldguru-frontend yarn cache clean
 
 
