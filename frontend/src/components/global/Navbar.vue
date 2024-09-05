@@ -1,6 +1,6 @@
 <template>
 <div class="fixed w-full">
-  <nav class="px-8 md:px-24 bg-white border-b-4 border-primary-40">
+  <nav class="px-8 md:px-24 bg-white border-b-4 border-white">
     <div class="flex flex-wrap items-center justify-between mx-auto p-4">
       <router-link :to="{ name: 'HomePage' }" href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="/YieldGuru logo.jpeg" class="h-8" alt="Yield Guru Logo" />
@@ -13,7 +13,7 @@
           </svg>
       </button>
       <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul class="font-semibold flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+        <ul class="font-normal flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
           <li v-for="route in navObj">
             <router-link :to="{ name: route.pageName }"
                 :class="[router.name == route.pageName ? 'text-labs-orange': 'text-primary-500']" v-if="route.type == 'text'"
