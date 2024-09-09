@@ -1,11 +1,11 @@
 <template>
-    <!-- Created with Inkscape (http://www.inkscape.org/) -->
+  <!-- Created with Inkscape (http://www.inkscape.org/) -->
 <svg
-viewBox="0 0 1507.4725 1057.8341"
+   viewBox="0 0 1507.4725 1057.8341"
    version="1.1"
    id="svg1"
    xml:space="preserve"
-   style="width:80vw; height: auto;"
+   class="w-full h-auto"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"><defs
    id="defs1" /><g

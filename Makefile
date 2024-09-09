@@ -32,7 +32,7 @@ frontend-sh:
 frontend-install:
 	make frontend-clean
 	docker exec --workdir /app yieldguru-frontend yarn install
-
+ 
 .PHONY: frontend-clean
 frontend-clean:
 	rm -rf ./frontend/node_modules 2>/dev/null || true

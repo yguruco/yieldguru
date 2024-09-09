@@ -3,30 +3,33 @@
     <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center md:w-4/5">
       <!-- Hero Content -->
       <div class="order-2 lg:order-1 text-primary-500 mr-4 antialiased">
-        <h1 class="text-4xl font-bold md:text-5xl bg-gradient-to-r from-[#EA8D8D] to-[#A890FE] bg-clip-text text-transparent">
+        <h1 class="text-4xl font-bold md:text-5xl text-[#800080]">
           Yield Guru Investments
         </h1>
-        <h2 class="mt-4 text-lg md:text-xl bg-gradient-to-r from-[#EA8D8D] to-[#A890FE] bg-clip-text text-transparent">
+
+        <h2 class="mt-4 text-lg md:text-xl text-[#800080]">
           Revolutionizing Public Transport and Investment
         </h2>
-        <p class="bg-gradient-to-r from-[#EA8D8D] to-[#A890FE] bg-clip-text text-transparent tracking-wide">
+        <p class="text-[#800080] tracking-wide">
           Harnessing blockchain technology to tokenize electric buses, Yield Guru Investments offers a unique trifecta of Cryptocurrency Management, Investment Opportunities, and Public Transportation Services.
         </p>
         <div class="mt-8 py-2">
-          <a href="#" class="bg-[#A890FE] text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-[#ffcab6]">
+          <a href="#" class="bg-[#800080] text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-[#e4843f]">
             Get Started
           </a>
         </div>
       </div>
       <!-- Hero Image -->
       <div class="order-1 lg:order-2">
-        <img src="../../../public/purple-bus.jpg" alt="Yield Guru" class="w-full h-auto">
+        <HeroSvg /> 
+        <!-- <img src=". ./../../public/purple-bus.jpg" alt="Yield Guru" class="w-full h-auto"> -->
       </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
+import HeroSvg from '../global/svg/HeroSvg.vue';
 </script>
 
 <style>
