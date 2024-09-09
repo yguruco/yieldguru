@@ -8,11 +8,11 @@
         </a>
         <div class="p-6">
           <a href="#">
-            <h5 class="mb-2 text-2xl font-normal tracking-tight text-gray-900 dark:text-white">
+            <h5 class="mb-2 text-2xl font-medium tracking-tight text-gray-900 dark:text-white">
               Eliud Mungai.
             </h5>
           </a>
-          <p class="mb-4 font-light text-gray-700 dark:text-gray-400">
+          <p class="mb-4 font-normal text-gray-700 dark:text-gray-400">
             A venture builder with 10+ years of diverse experience in startup founding, entrepreneur support, business market expansion strategy, and venture capital investment.
           </p>
         </div>
@@ -25,11 +25,11 @@
         </a>
         <div class="p-6">
           <a href="#">
-            <h5 class="mb-2 text-2xl font-normal tracking-tight text-gray-900 dark:text-white">
+            <h5 class="mb-2 text-2xl font-medium tracking-tight text-gray-900 dark:text-white">
               Michael Ochara.
             </h5>
           </a>
-          <p class="mb-4 font-light text-gray-700 dark:text-gray-400">
+          <p class="mb-4 font-normal text-gray-700 dark:text-gray-400">
             Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
           </p>
         </div>
@@ -42,11 +42,11 @@
         </a>
         <div class="p-6">
           <a href="#">
-            <h5 class="mb-2 text-2xl font-normal tracking-tight text-gray-900 dark:text-white">
+            <h5 class="mb-2 text-2xl font-medium tracking-tight text-gray-900 dark:text-white">
               Eric Wachiuri.
             </h5>
           </a>
-          <p class="mb-4 font-light text-gray-700 dark:text-gray-400">
+          <p class="mb-4 font-normal text-gray-700 dark:text-gray-400">
             A software developer with 2.5 years of experience, specializing in blockchain technology and DeFi, combining technical skills with a deep enthusiasm for decentralized finance solutions.
           </p>
         </div>
@@ -60,7 +60,7 @@
 
 <style>
 .bg-gradient {
-  background: linear-gradient(135deg, #EA8D8D, #A890FE);
+  background-color: #800080;
 }
 
 .card-inner-shadow {

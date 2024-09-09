@@ -3,7 +3,7 @@
     <SectionOne />
     <SectionTwo />
     <SectionThree />
-    <SectionFour />
+    <!-- <SectionFour /> -->
     <SectionFive />
 </template>
 
