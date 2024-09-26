@@ -7,7 +7,7 @@ import LearnView from "@/views/LearnView.vue";
 import BlogView from "@/views/BlogView.vue";
 import ListEMoblityView from "@/views/ListEMoblityView.vue";
 import LogInView from "@/views/LogInView.vue";
-import RegisterView from "@/views/RegisterView.vue"
+import SwapView from '@/views/SwapView.vue';
 
 const routes = [
   {
@@ -58,10 +58,10 @@ const routes = [
     component: LogInView,
   },
   {
-    path: "/register",
-    name: "RegisterPage",
+    path: "/swap",
+    name: "Swap",
     props: true,
-    component: RegisterView,
+    component: SwapView,
   }
 ];
 

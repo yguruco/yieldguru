@@ -99,6 +99,11 @@ let navObj = [
     'type': 'text'
   },
   {
+     'pageName': 'Swap',
+     'label': 'Swap',
+     'type': 'text'
+  },
+  {
     'pageName': 'AboutUsPage',
     'label': 'About Us',
     'type': 'text'
@@ -123,14 +128,7 @@ let navObj = [
     'label': 'Log In',
     'type': 'button'
   },
-  {
-    'pageName': 'RegisterPage',
-    'label': 'Register',
-    'type': 'button'
-  }
 ];
-
-
 
 </script>
 
