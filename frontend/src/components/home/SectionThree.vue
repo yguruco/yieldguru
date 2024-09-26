@@ -1,8 +1,8 @@
 <template>
-    <section class="py-12 bg-[#800080]">
+    <section class="py-16" style="background: linear-gradient(90deg, #ffa8bd, #242acf);">
         <div class="container mx-auto w-full md:w-3/4">
             <!-- Section Heading -->
-            <h2 class="text-3xl font-bold text-center text-white mb-8">
+            <h2 class="text-3xl font-medium text-center text-white mb-8">
                 Driving Change, One Electric Bus at a Time
             </h2>
 
@@ -80,8 +80,8 @@
                                     Sustainable Investment
                                 </h5>
                             </a>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                                Yield Guru Investments offers a green investment opportunity in electric buses, appealing to environmentally conscious investors.
+                            <p class="mb-3 font-light text-gray-700 dark:text-gray-400">
+                                Yield Guru Investments offers a green investment opportunity in electric mobility, appealing to environmentally conscious investors.
                             </p>
                         </div>
                     </div>
@@ -156,7 +156,7 @@
                                     Transparent Operations
                                 </h5>
                             </a>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            <p class="mb-3 font-light text-gray-700 dark:text-gray-400">
                                 The company’s use of blockchain technology ensures real-time tracking of investment returns and operational metrics, providing transparency and accountability.
                             </p>
                         </div>
@@ -234,8 +234,8 @@
                                     Financial Inclusion
                                 </h5>
                             </a>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                                By tokenizing electric buses, the company democratizes investment in public transportation, enabling a wider range of individuals to participate.
+                            <p class="mb-3 font-light text-gray-700 dark:text-gray-400">
+                                By tokenizing electric mobility, the company democratizes investment in public transportation, enabling a wider range of individuals to participate.
                             </p>
                         </div>
                     </div>
@@ -309,8 +309,8 @@
                                     Stable Digital Currency
                                 </h5>
                             </a>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                                The Kenya Shilling stable coin backed by electric bus assets provides a secure and reliable digital currency option, addressing the need for financial stability.
+                            <p class="mb-3 font-light text-gray-700 dark:text-gray-400">
+                                The Kenya Shilling stable coin backed by electric mobility assets provides a secure and reliable digital currency option, addressing the need for financial stability.
                             </p>
                         </div>
                     </div>

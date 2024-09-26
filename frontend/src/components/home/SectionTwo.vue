@@ -1,8 +1,8 @@
 <template>
-    <section class="py-16" style="background-color: #800080;">
-      <div class="container mx-auto w-3/4">
+  <section class="py-16" style="background: linear-gradient(90deg, #ffa8bd, #242acf);">
+    <div class="container mx-auto w-3/4">
         <!-- Section Heading -->
-        <h2 class="text-3xl font-bold text-center text-white mb-8">
+        <h2 class="text-3xl font-medium text-center text-white mb-8">
           Empowering Investors through Innovative Opportunities
         </h2>
   
@@ -79,7 +79,7 @@
                   Cryptocurrency Management
                 </h5>
               </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              <p class="mb-3 font-light text-gray-700 dark:text-gray-400">
                 Yield Guru Investments offers a unique opportunity to invest in the cryptocurrency market through the backing of a stable coin pegged to the Kenyan Shilling.
                 <br />
                 <br />
@@ -132,8 +132,8 @@
                   Investment Opportunities
                 </h5>
               </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                By tokenizing electric buses, the company creates a novel asset class that offers investors a monthly yield, democratizing access to sustainable public transport investments.
+              <p class="mb-3 font-light text-gray-700 dark:text-gray-400">
+                By tokenizing electric mobility, the company creates a novel asset class that offers investors a monthly yield, democratizing access to sustainable public transport investments.
                 <br />
                 <br />
                 This innovative approach provides a stable and attractive investment option, catering to both seasoned and new investors.
@@ -186,7 +186,7 @@
                   Public Transportation Services
                 </h5>
               </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              <p class="mb-3 font-light text-gray-700 dark:text-gray-400">
                 Yield Guru Investments’ unique business model integrates public transportation services, leveraging blockchain technology to enhance efficiency and transparency.
                 <br />
                 <br />
