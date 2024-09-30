@@ -1,15 +1,22 @@
 
 import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+import { createPinia } from 'pinia';
+import { VueQueryPlugin } from '@tanstack/vue-query';
+import { WagmiPlugin } from '@wagmi/vue';
 
 import App from './App.vue'
 import router from './router'
+import { config } from '@/config/wagmi'
 
 import './assets/scss/main.scss'
 
-const app = createApp(App)
+const pinia = createPinia();
 
-app.use(createPinia())
-app.use(router)
+createApp(App)
+    .use(pinia)
+    .use(router)
+    .use(WagmiPlugin, { config }) // Inject the Wagmi plugin
+    .use(VueQueryPlugin, {}) // Inject the Vue Query plugin
+    .mount('#app')
 
-app.mount('#app')
+

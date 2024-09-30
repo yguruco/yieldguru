@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import HeaderArea from '@/components/Header/HeaderArea.vue'
 import SidebarArea from '@/components/Sidebar/SidebarArea.vue'
+import BreadcrumbDefault from '@/components/Breadcrumbs/BreadcrumbDefault.vue';
 </script>
 
 <template>
@@ -15,6 +16,10 @@ import SidebarArea from '@/components/Sidebar/SidebarArea.vue'
       <!-- ===== Header Start ===== -->
       <HeaderArea />
       <!-- ===== Header End ===== -->
+
+      <!-- Breadcrumb Start -->
+      <BreadcrumbDefault />
+      <!-- Breadcrumb End -->
 
       <!-- ===== Main Content Start ===== -->
       <main>

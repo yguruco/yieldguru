@@ -1,4 +1,5 @@
-import defaultTheme from 'tailwindcss/defaultTheme'
+import defaultTheme from 'tailwindcss/defaultTheme';
+import typography from '@tailwindcss/typography';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -8,13 +9,11 @@ export default {
     fontFamily: {
       satoshi: ['Satoshi', 'sans-serif']
     },
-    screens: {
-      '2xsm': '375px',
-      xsm: '425px',
-      '3xl': '2000px',
-      ...defaultTheme.screens
-    },
     extend: {
+      screens: {
+        "3xl": "1840px",
+        "4xl": "2160px",
+      },
       colors: {
         current: 'currentColor',
         transparent: 'transparent',
@@ -324,5 +323,17 @@ export default {
       }
     }
   },
-  plugins: []
+  plugins: [
+    require("daisyui"),
+  ],
+  daisyui: {
+    themes: ['light', 'dark'], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
+    darkTheme: "dark", // name of one of the included themes for dark mode
+    base: false, // applies background color and foreground color for root element by default
+    styled: true, // include daisyUI colors and design decisions for all components
+    utils: true, // adds responsive and modifier utility classes
+    prefix: "", // prefix for daisyUI classnames (components, modifiers and responsive class names. Not colors)
+    logs: true, // Shows info about daisyUI version and used config in the console when building your CSS
+    themeRoot: ":root", // The element that receives theme color CSS variables
+  },
 }

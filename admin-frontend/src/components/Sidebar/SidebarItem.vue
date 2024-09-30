@@ -1,27 +1,3 @@
-<script setup lang="ts">
-import { useSidebarStore } from '@/stores/sidebar'
-import { useRoute } from 'vue-router'
-import SidebarDropdown from './SidebarDropdown.vue'
-
-const sidebarStore = useSidebarStore()
-
-const props = defineProps(['item', 'index'])
-const currentPage = useRoute().name
-
-interface SidebarItem {
-  label: string
-}
-
-const handleItemClick = () => {
-  const pageName = sidebarStore.page === props.item.label ? '' : props.item.label
-  sidebarStore.page = pageName
-
-  if (props.item.children) {
-    return props.item.children.some((child: SidebarItem) => sidebarStore.selected === child.label)
-  }
-}
-</script>
-
 <template>
   <li>
     <router-link
@@ -29,7 +5,7 @@ const handleItemClick = () => {
       class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-primary-100 dark:hover:bg-meta-4"
       @click.prevent="handleItemClick"
       :class="{
-        'bg-primary-100 dark:bg-meta-4': sidebarStore.page === item.label
+        'bg-primary-100 dark:bg-meta-4': sidebarStore.page === item.sidebarGroup
       }"
     >
       {{ item.label }}
@@ -65,3 +41,27 @@ const handleItemClick = () => {
     </div>
   </li>
 </template>
+<script setup lang="ts">
+import { useSidebarStore } from '@/stores/sidebar'
+import { useRoute } from 'vue-router'
+import SidebarDropdown from './SidebarDropdown.vue'
+import router from '@/router';
+
+const sidebarStore = useSidebarStore()
+
+const props = defineProps(['item', 'index'])
+const currentPage = useRoute().name
+
+interface SidebarItem {
+  label: string
+}
+
+const handleItemClick = () => {
+  const pageName = sidebarStore.page === props.item.label ? '' : props.item.label
+  sidebarStore.page = pageName
+
+  if (props.item.children) {
+    return props.item.children.some((child: SidebarItem) => sidebarStore.selected === child.label)
+  }
+}
+</script>

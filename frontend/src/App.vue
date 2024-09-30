@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <Navbar />
-    <div class="min-h-[70vh]">
-      <router-view />
-    </div>
+    <router-view :class="'min-h-screen'" />
     <Footer />
   </div>
 </template>
@@ -12,5 +10,4 @@ import Navbar from "@/components/global/Navbar.vue";
 import Footer from "./components/global/Footer.vue";
 
 </script>
-<style>
-</style>
+<style></style>

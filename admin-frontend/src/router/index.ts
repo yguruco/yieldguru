@@ -1,42 +1,27 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import { useSidebarStore } from '@/stores/sidebar'
+import { storeToRefs } from 'pinia';
+import DashboardView from '@/views/DashboardView.vue';
+import authRoutes from './authRoutes';
+import poolRoutes from './poolRoutes';
+import userRoutes from './userRoutes';
+import type { Route } from '@/models/route';
 
-import HomeView from '@/views/Dashboard/HomeView.vue'
-import SigninView from '@/views/Authentication.vue/SigninView.vue';
-import SignupView from '@/views/Authentication.vue/SignupView.vue';
-import ProfileView from '@/views/ProfileView.vue';
-
-
-const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: HomeView
-  },
-  {
-    path: '/profile',
-    name: 'profile',
-    component: ProfileView,
-    meta: {
-      title: 'Profile'
-    }
-  },
-  {
-    path: '/auth/signin',
-    name: 'signin',
-    component: SigninView,
-    meta: {
-      title: 'Signin'
-    }
-  },
-  {
-    path: '/auth/signup',
-    name: 'signup',
-    component: SignupView,
-    meta: {
-      title: 'Signup'
-    }
-  }
-];
+const routes: Route[] = [
+    {
+      path: '/',
+      name: 'home',
+      component: DashboardView,
+      meta: {
+        title: 'Dashboard',
+        label: 'Dashboard',
+      }
+    },
+    
+    ...authRoutes,
+    ...poolRoutes,
+    ...userRoutes
+  ];
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -47,7 +32,14 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  document.title = `${to.meta.title} | Yield Guru Admin`
+  document.title = `${to.meta.title} | Yield Guru Admin`;
+
+  // update sidebarStore with current page
+  const sidebarStore = useSidebarStore();
+  const {page} = storeToRefs(sidebarStore);
+  page.value = to.meta.title;
+  
+
   next()
 })
 

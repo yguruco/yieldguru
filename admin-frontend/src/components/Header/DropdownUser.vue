@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { onClickOutside } from '@vueuse/core'
 import { ref } from 'vue'
+import { axiosBackendInstance } from '@/utils/axios'
+import router from '@/router'
+
 
 const target = ref(null)
 const dropdownOpen = ref(false)
@@ -8,6 +11,15 @@ const dropdownOpen = ref(false)
 onClickOutside(target, () => {
   dropdownOpen.value = false
 })
+
+let logout = () => {
+    axiosBackendInstance.post('/logout', {
+    }).then((response) => {
+        router.push({name: 'signin'})
+    }).catch(error => {
+        console.log(error);
+    })
+}
 </script>
 
 <template>
@@ -77,7 +89,7 @@ onClickOutside(target, () => {
         </li>
         <li>
           <router-link
-            to="/pages/settings"
+            to="/settings"
             class="flex items-center gap-3.5 text-sm font-medium duration-300 ease-in-out hover:text-primary lg:text-base"
           >
             <svg
@@ -102,6 +114,7 @@ onClickOutside(target, () => {
         </li>
       </ul>
       <button
+        @click="logout"
         class="flex items-center gap-3.5 py-4 px-6 text-sm font-medium duration-300 ease-in-out hover:text-primary lg:text-base"
       >
         <svg
