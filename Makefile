@@ -60,11 +60,11 @@ endif
 clean-web:
 	rm -rf ./frontend/node_modules 2>/dev/null || true
 	rm -rf ./frontend/yarn.lock 2>/dev/null || true
-	docker-compose exec web yarn cache clean
+	docker-compose run web yarn cache clean
 
 .PHONY: clean-admin-web
 clean-admin-web:
 	rm -rf ./admin-frontend/node_modules 2>/dev/null || true
 	rm -rf ./admin-frontend/yarn.lock 2>/dev/null || true
-	docker-compose exec web-admin yarn cache clean
+	docker-compose run web-admin yarn cache clean
 

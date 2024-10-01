@@ -13,48 +13,48 @@ services:
     networks:
       - yg
 
-  web-admin:
-    image: yieldguru-admin-frontend
-    container_name: yg.admin-frontend
-    build:
-      context: ./admin-frontend
-      dockerfile: Dockerfile.dev
-    ports:
-      - "8081:5173"
-    volumes:
-      - './admin-frontend:/app'
-    networks:
-      - yg
+  # web-admin:
+  #   image: yieldguru-admin-frontend
+  #   container_name: yg.admin-frontend
+  #   build:
+  #     context: ./admin-frontend
+  #     dockerfile: Dockerfile.dev
+  #   ports:
+  #     - "8081:5173"
+  #   volumes:
+  #     - './admin-frontend:/app'
+  #   networks:
+  #     - yg
 
 
 
-  yg.api:
-    build:
-      context: './backend/vendor/laravel/sail/runtimes/8.3'
-      dockerfile: Dockerfile
-      args:
-          WWWGROUP: '${WWWGROUP}'
-    image: 'sail-8.3/app'
-    container_name: yg.api
-    extra_hosts:
-      - 'host.docker.internal:host-gateway'
-    ports:
-      - '${APP_PORT:-80}:80'
-      - '${VITE_PORT:-5173}:${VITE_PORT:-5173}'
-    environment:
-      WWWUSER: '${WWWUSER}'
-      LARAVEL_SAIL: 1
-      XDEBUG_MODE: '${SAIL_XDEBUG_MODE:-off}'
-      XDEBUG_CONFIG: '${SAIL_XDEBUG_CONFIG:-client_host=host.docker.internal}'
-      IGNITION_LOCAL_SITES_PATH: '${PWD}'
-    volumes:
-      - './backend:/var/www/html'
-    networks:
-      - yg
-    depends_on:
-      - db
-      - meilisearch
-      - redis
+  # yg.api:
+  #   build:
+  #     context: './backend/vendor/laravel/sail/runtimes/8.3'
+  #     dockerfile: Dockerfile
+  #     args:
+  #         WWWGROUP: '${WWWGROUP}'
+  #   image: 'sail-8.3/app'
+  #   container_name: yg.api
+  #   extra_hosts:
+  #     - 'host.docker.internal:host-gateway'
+  #   ports:
+  #     - '${APP_PORT:-80}:80'
+  #     - '${VITE_PORT:-5173}:${VITE_PORT:-5173}'
+  #   environment:
+  #     WWWUSER: '${WWWUSER}'
+  #     LARAVEL_SAIL: 1
+  #     XDEBUG_MODE: '${SAIL_XDEBUG_MODE:-off}'
+  #     XDEBUG_CONFIG: '${SAIL_XDEBUG_CONFIG:-client_host=host.docker.internal}'
+  #     IGNITION_LOCAL_SITES_PATH: '${PWD}'
+  #   volumes:
+  #     - './backend:/var/www/html'
+  #   networks:
+  #     - yg
+  #   depends_on:
+  #     - db
+  #     - meilisearch
+  #     - redis
 
   db:
     image: 'postgres:15'
